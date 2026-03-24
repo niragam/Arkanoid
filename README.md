@@ -2,7 +2,6 @@
 
 An Object-Oriented implementation of Arkanoid arcade game written in Java.
 
-
 ## 📸 Gallery
 
 ![Main Menu](https://github.com/user-attachments/assets/c3047b71-d5a4-4ea9-a183-0d4661c91844)
@@ -19,14 +18,15 @@ An Object-Oriented implementation of Arkanoid arcade game written in Java.
   <img src="https://github.com/user-attachments/assets/6728b453-2c28-4f29-b8ea-d18ddc0bd53a" width="400" />
 </div>
 
-
 ## 🚀 Quickstart
 
 ### Prerequisites
-- Java **25+** (matches `pom.xml`)
+
+- Java **25+**
 - Maven
 
 ### Run
+
 ```bash
 git clone https://github.com/niragam/Arkanoid.git
 cd Arkanoid
@@ -34,12 +34,12 @@ mvn javafx:run
 ```
 
 ## 🎮 Controls
+
 - Main menu: `↑/↓` + `Enter`
 - Move paddle: `←/→`
 - Launch ball: `Space`
 - Pause: `P` (resume with `P` or `Space`, quit to menu with `Q`)
 - Debug: `K` skips the current level
-
 
 ## ✨ Key Features
 
@@ -66,16 +66,16 @@ mvn javafx:run
 
 ## 📐 Project Structure
 
-| Package | Purpose |
-| :--- | :--- |
-| **`arkanoid`** | JavaFX app entry points (`Launcher`, `App`). |
-| **`arkanoid.animation`** | Animation abstractions and per-screen/level runners. |
-| **`arkanoid.core`** | Game flow controls and main loop. |
-| **`arkanoid.entity`** | Game objects (`Ball`, `Paddle`, `Block`). |
-| **`arkanoid.event`** | Hit events/listeners (scoring, removers, power-ups). |
-| **`arkanoid.geometry`** | Math primitives (`Point`, `Line`, `Rectangle`). |
-| **`arkanoid.level`** | Level generation and layouts. |
-| **`arkanoid.graphics`** | Rendering utilities and drawing primitives. |
-| **`arkanoid.graphics.painters`** | Per-entity painters used by the renderer. |
-| **`arkanoid.screen`** | UI screens (menu, pause, etc.). |
-| **`arkanoid.util`** | Small shared utilities (counters, input state, etc.). |
+| Package                          | Purpose                                               |
+| :------------------------------- | :---------------------------------------------------- |
+| **`arkanoid`**                   | JavaFX app entry points (`Launcher`, `App`).          |
+| **`arkanoid.animation`**         | Animation abstractions and per-screen/level runners.  |
+| **`arkanoid.core`**              | Game flow controls and main loop.                     |
+| **`arkanoid.entity`**            | Game objects (`Ball`, `Paddle`, `Block`).             |
+| **`arkanoid.event`**             | Hit events/listeners (scoring, removers, power-ups).  |
+| **`arkanoid.geometry`**          | Math primitives (`Point`, `Line`, `Rectangle`).       |
+| **`arkanoid.level`**             | Level generation and layouts.                         |
+| **`arkanoid.graphics`**          | Rendering utilities and drawing primitives.           |
+| **`arkanoid.graphics.painters`** | Per-entity painters used by the renderer.             |
+| **`arkanoid.screen`**            | UI screens (menu, pause, etc.).                       |
+| **`arkanoid.util`**              | Small shared utilities (counters, input state, etc.). |
